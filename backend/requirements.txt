@@ -1,0 +1,10 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+openai==1.12.0             # For GPT-3.5 API
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4           # Vector store for RAG (use faiss-gpu if you want later)
+python-dotenv==1.0.1       # For managing your OpenAI API key
+pydantic==1.10.13          # FastAPI models
+httpx==0.27.0              # Async HTTP requests (for OpenAI)
+python-multipart==0.0.9    # If you need to upload files
+whisper-openai==2023.1.1   # Optional: For speech-to-text using Whisper API
