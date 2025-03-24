@@ -9,18 +9,18 @@ import emailScreen from './assets/email_screen.png';
 function MockiPhoneScreen({ intent, isListening }) {
   const renderContent = () => {
     if (isListening) {
-      return <img src={siriListening} alt="Siri Listening" className="iphone-image" />;
+      return <img src={siriListening}  className="iphone-image" />;
     }
     switch (intent) {
       case 'photos':
-        return <img src={samplePhoto} alt="Recent Photo" className="iphone-image" />;
+        return <img src={samplePhoto}  className="iphone-image" />;
       case 'email':
-        return <img src={emailScreen} alt="Email View" className="iphone-image" />;
+        return <img src={emailScreen}  className="iphone-image" />;
       case 'calendar':
       case 'weather':
       case 'downloads':
       default:
-        return <img src={homeScreen} alt="iPhone Home" className="iphone-image" />;
+        return <img src={homeScreen} className="iphone-image" />;
     }
   };
 
