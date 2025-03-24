@@ -12,7 +12,7 @@ function App() {
   const sendMessage = async () => {
     setIsListening(false);
     try {
-      const res = await axios.post('http://127.0.0.1:8000/chat', {
+      const res = await axios.post('https://siri20-production.up.railway.app/chat', {
         user_input: input
       });
       setResponse(res.data.response);
